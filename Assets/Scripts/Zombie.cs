@@ -7,11 +7,12 @@ public class Zombie : MonoBehaviour
     public Spawner spawner;
     public float moveSpeed = 1f;
     public int point = 1;
+    public RuntimeAnimatorController[] animators;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        GetComponent<Animator>().runtimeAnimatorController = animators[Random.Range(0, animators.Length)];
     }
 
     // Update is called once per frame

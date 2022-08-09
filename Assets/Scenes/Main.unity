@@ -1233,6 +1233,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1687772663, guid: b52124ef072959e498bf0f07c6aad5e1, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b188d015ad65895498befe940507be66, type: 2}
     - target: {fileID: 387915098485763275, guid: b52124ef072959e498bf0f07c6aad5e1, type: 3}
       propertyPath: m_Name
       value: Zombie
@@ -1244,6 +1248,18 @@ PrefabInstance:
     - target: {fileID: 387915098485763316, guid: b52124ef072959e498bf0f07c6aad5e1, type: 3}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 387915098485763316, guid: b52124ef072959e498bf0f07c6aad5e1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.0871181
+      objectReference: {fileID: 0}
+    - target: {fileID: 387915098485763316, guid: b52124ef072959e498bf0f07c6aad5e1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.0871181
+      objectReference: {fileID: 0}
+    - target: {fileID: 387915098485763316, guid: b52124ef072959e498bf0f07c6aad5e1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.0871181
       objectReference: {fileID: 0}
     - target: {fileID: 387915098485763316, guid: b52124ef072959e498bf0f07c6aad5e1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1289,6 +1305,22 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 148622026}
+    - target: {fileID: 904865283143313283, guid: b52124ef072959e498bf0f07c6aad5e1, type: 3}
+      propertyPath: animators.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 904865283143313283, guid: b52124ef072959e498bf0f07c6aad5e1, type: 3}
+      propertyPath: animators.Array.data[0]
+      value: 
+      objectReference: {fileID: 9100000, guid: b188d015ad65895498befe940507be66, type: 2}
+    - target: {fileID: 904865283143313283, guid: b52124ef072959e498bf0f07c6aad5e1, type: 3}
+      propertyPath: animators.Array.data[1]
+      value: 
+      objectReference: {fileID: 9100000, guid: a2b3492e3ab0d8846874cff31aa763e8, type: 2}
+    - target: {fileID: 904865283143313283, guid: b52124ef072959e498bf0f07c6aad5e1, type: 3}
+      propertyPath: animators.Array.data[2]
+      value: 
+      objectReference: {fileID: 9100000, guid: 63d68d1b6fceeac4cae5b252904a9d25, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b52124ef072959e498bf0f07c6aad5e1, type: 3}
 --- !u!1 &1687772656 stripped
@@ -1489,6 +1521,22 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 148622026}
+    - target: {fileID: -6077931659781627554, guid: ef1d715d5c6752248bb76f51bc8617c6, type: 3}
+      propertyPath: animators.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6077931659781627554, guid: ef1d715d5c6752248bb76f51bc8617c6, type: 3}
+      propertyPath: animators.Array.data[0]
+      value: 
+      objectReference: {fileID: 9100000, guid: 7822585a72a79ce46861a014a58686dc, type: 2}
+    - target: {fileID: -6077931659781627554, guid: ef1d715d5c6752248bb76f51bc8617c6, type: 3}
+      propertyPath: animators.Array.data[1]
+      value: 
+      objectReference: {fileID: 9100000, guid: bad7c70179cb20540a8c4850b6c94dd1, type: 2}
+    - target: {fileID: 2023571346, guid: ef1d715d5c6752248bb76f51bc8617c6, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bad7c70179cb20540a8c4850b6c94dd1, type: 2}
     - target: {fileID: 2432988843633227276, guid: ef1d715d5c6752248bb76f51bc8617c6, type: 3}
       propertyPath: m_RootOrder
       value: 8
