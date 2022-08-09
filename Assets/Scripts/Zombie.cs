@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Zombie : MonoBehaviour
 {
+    public Spawner spawner;
     public float moveSpeed = 1f;
     public int point = 1;
 
@@ -21,6 +22,7 @@ public class Enemy : MonoBehaviour
 
     private void OnMouseDown() {
         GameManager.Instance.AddScore(point);
+        spawner.clearedThisWave++;
         Destroy(gameObject);
     }
 
@@ -29,6 +31,7 @@ public class Enemy : MonoBehaviour
         if (other.gameObject.tag == "DestroyEnemy")
         {
             GameManager.Instance.DecreaseLife();
+            spawner.clearedThisWave++;
             Destroy(gameObject);
         }
     }

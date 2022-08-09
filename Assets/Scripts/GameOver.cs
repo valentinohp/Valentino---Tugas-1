@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameOver : MonoBehaviour
@@ -11,5 +12,10 @@ public class GameOver : MonoBehaviour
     void Start()
     {
         score.text = PlayerPrefs.GetInt("Score").ToString();
+    }
+
+    public void TryAgain()
+    {
+        SceneManager.LoadScene("Main");
     }
 }
