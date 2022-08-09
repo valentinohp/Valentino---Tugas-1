@@ -20,6 +20,7 @@ public class Spawner : MonoBehaviour
 
     private void Start() 
     {
+        Time.timeScale = 1;
         SpawnEnemy();
     }
 
