@@ -12,30 +12,30 @@ public class GameManager : MonoBehaviour
     public TMP_Text text;
     public GameObject lives;
 
-    private void Awake() 
+    private void Awake()
     {
         // If there is an instance, and it's not me, delete myself.
-        if (Instance != null && Instance != this) 
-        { 
-            Destroy(this); 
-        } 
-        else 
-        { 
-            Instance = this; 
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
         }
+        else
+        {
+            Instance = this;
         }
+    }
 
     public void AddScore(int point)
     {
         score += point;
-        text.text = score.ToString(); 
+        text.text = score.ToString();
     }
 
     public void DecreaseLife()
     {
         lives.transform.Find("Life " + life).gameObject.SetActive(false);
         life--;
-        
+
         if (life <= 0)
         {
             GameOver();

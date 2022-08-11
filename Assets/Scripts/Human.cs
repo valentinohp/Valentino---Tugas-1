@@ -2,37 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Human : MonoBehaviour
+public class Human : BaseCharacter
 {
-    public Spawner spawner;
-    public float moveSpeed = 1f;
-    public int point = 5;
-    public RuntimeAnimatorController[] animators;
-
-    // Start is called before the first frame update
-    void Start()
+    public override void OnMouseDown()
     {
-        GetComponent<Animator>().runtimeAnimatorController = animators[Random.Range(0, animators.Length)];
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        transform.position -= new Vector3(0, moveSpeed * Time.deltaTime, 0);
-    }
-
-    private void OnMouseDown() {
         GameManager.Instance.DecreaseLife();
-        spawner.clearedThisWave++;
-        Destroy(gameObject);
+        base.OnMouseDown();
     }
 
-    private void OnTriggerEnter2D(Collider2D other) 
+    protected override void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "DestroyEnemy")
         {
-            GameManager.Instance.AddScore(point);
-            spawner.clearedThisWave++;
+            GameManager.Instance.AddScore(_point);
+            _spawner.clearedThisWave++;
             Destroy(gameObject);
         }
     }
