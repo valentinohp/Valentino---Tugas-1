@@ -34,6 +34,10 @@ public class Spawner : MonoBehaviour
     {
         Vector3 spawnPoint = new Vector3(Random.Range(spawnPointMin.position.x, spawnPointMax.position.x), transform.position.y, 0);
         GameObject obj = Instantiate(spawnList[Random.Range(0, spawnList.Length)], spawnPoint, Quaternion.identity);
+        if (obj.tag == "ZombieZigzag")
+        {
+            obj.transform.position = new Vector3(0, transform.position.y, 0);
+        }
         obj.SetActive(true);
         spawned++;
     }

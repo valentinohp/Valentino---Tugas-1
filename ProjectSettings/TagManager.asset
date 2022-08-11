@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - DestroyEnemy
+  - SideWall
+  - ZombieZigzag
   layers:
   - Default
   - TransparentFX
